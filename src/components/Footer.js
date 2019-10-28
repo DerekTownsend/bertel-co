@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <footer className="footer">
       <div className="social-icons">
-          <a href="https://www.instagram.com/bertel_peterson/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook fa-2x"></i></a>
+          <a href="https://www.facebook.com/bertel.peterson" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook fa-2x"></i></a>
           <a href="https://twitter.com/BertelPeterson" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter fa-2x"></i></a>
           <a href="https://www.instagram.com/bertel_peterson/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram fa-2x"></i></a>
       </div>
