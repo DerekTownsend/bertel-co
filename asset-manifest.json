@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/bertel-co/static/css/main.36b90be2.chunk.css",
+    "main.js": "/bertel-co/static/js/main.5407ee20.chunk.js",
+    "main.js.map": "/bertel-co/static/js/main.5407ee20.chunk.js.map",
+    "runtime-main.js": "/bertel-co/static/js/runtime-main.7eb0d175.js",
+    "runtime-main.js.map": "/bertel-co/static/js/runtime-main.7eb0d175.js.map",
+    "static/js/2.b1599b6c.chunk.js": "/bertel-co/static/js/2.b1599b6c.chunk.js",
+    "static/js/2.b1599b6c.chunk.js.map": "/bertel-co/static/js/2.b1599b6c.chunk.js.map",
+    "index.html": "/bertel-co/index.html",
+    "precache-manifest.00a81f7f2742cfd2a63776ba14619936.js": "/bertel-co/precache-manifest.00a81f7f2742cfd2a63776ba14619936.js",
+    "service-worker.js": "/bertel-co/service-worker.js",
+    "static/css/main.36b90be2.chunk.css.map": "/bertel-co/static/css/main.36b90be2.chunk.css.map",
+    "static/media/BPlogo(modified).png": "/bertel-co/static/media/BPlogo(modified).1774133f.png",
+    "static/media/BPlogo.jpg": "/bertel-co/static/media/BPlogo.b23a36db.jpg",
+    "static/media/beams.png": "/bertel-co/static/media/beams.d2139813.png",
+    "static/media/bus-statation.JPEG": "/bertel-co/static/media/bus-statation.91e405a7.JPEG",
+    "static/media/divider.JPG": "/bertel-co/static/media/divider.47199618.JPG",
+    "static/media/hero2.jpeg": "/bertel-co/static/media/hero2.18145915.jpeg",
+    "static/media/lanterns.png": "/bertel-co/static/media/lanterns.76e04844.png",
+    "static/media/office.png": "/bertel-co/static/media/office.d54568ab.png",
+    "static/media/office2.png": "/bertel-co/static/media/office2.20c5f844.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7eb0d175.js",
+    "static/js/2.b1599b6c.chunk.js",
+    "static/css/main.36b90be2.chunk.css",
+    "static/js/main.5407ee20.chunk.js"
+  ]
+}
