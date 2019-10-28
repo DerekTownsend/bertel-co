@@ -1,26 +1,68 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component }  from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import logo from './images/BPlogo(modified).png';
+import HomeContainer from './containers/HomeContainer'
+import AboutContainer from './containers/AboutContainer'
+import ShopContainer from './containers/ShopContainer'
+import QuoteContainer from './containers/QuoteContainer'
+import ProjectsContainer from './containers/ProjectsContainer'
+import ContactUsContainer from './containers/ContactUsContainer'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
-function App() {
+class App extends Component  {
+  render(){
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="container">
+        <Navbar />
+        <main>
+        <Switch>
+          <Route exact path='/' component={HomeContainer}/>
+          <Route exact path='/about' component={AboutContainer}/>
+          <Route exact path='/shop' component={ShopContainer}/>
+          <Route exact path='/quote' component={QuoteContainer}/>
+          <Route exact path='/projects' component={ProjectsContainer}/>
+          <Route exact path='/contact-us' component={ContactUsContainer}/>
+
+        </Switch>
+        </main>
+        <Footer />
+
+      </div>
+    );
+  }
 }
 
 export default App;
+// import React, { Component } from 'react';
+// // import {connect} from 'react-redux'
+//
+// class App extends Component {
+//   render(){
+//     return (
+//       <div>
+//
+//       </div>
+//     )
+//   }
+// }
+//
+// // const mapStateToProps = (state) => {
+// //   return {
+// //     movie: state.movie
+// //   }
+// // }
+// // const mapDispatchToProps = dispatch => {
+// //   return {
+// //     fetchMovies: (movies) => {
+// //       dispatch(fetchMovies(movies))
+// //     },
+// //     setPageMax: (pageNumber) => {
+// //       dispatch(setPageMax(pageNumber))
+// //     }
+// //   }
+// // }
+// export default App;
+// // export default connect(mapStateToProps, mapDispatchToProps)(App);
