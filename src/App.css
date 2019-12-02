@@ -8,6 +8,9 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
   background-color: red; */
   /* background-color: blue; */
   /* background-image: url("https://www.transparenttextures.com/patterns/dark-wall.png"); */
+  font-size:1em;
+  color: #223F9B;
+
 }
 h1,
 h2,
@@ -198,7 +201,99 @@ footer p {
   border: #223F9B solid .1em;
   line-height: 1.2em;
 }
+.shop-grid{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  min-height: 100vh;
+}
 
+.shop-items {
+  display: inline-block;
+  /* width: 64%; */
+  /* min-height: 93vh; */
+  /* border: .1em solid #223F9B ; */
+  /* border-right: none; */
+}
+
+.cart {
+  display: inline-block;
+  position: sticky;
+  right: 0;
+  top: 0;
+  /* width: 33%; */
+  height: 63vh;
+  border-bottom: .1em solid #223F9B ;
+  border-left: none;
+  /* align-self: center; */
+  padding-top: 7em;
+  border-radius: .5em;
+  padding-bottom: .5em;
+}
+.cart div.main-cart{
+  border: .1em solid #223F9B;
+   /* margin-top: -7em; */
+   height: 100%; margin: 0;
+   /* border-left: none; */
+   padding: .5em .5em 0 .5em;
+   border-radius: .5em;
+   overflow: scroll;
+}
+
+.cart div.main-cart div{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  font-size: .8em;
+  margin-bottom: .5em;
+}
+/* individual-item */
+.cart div.main-cart div.last-item{
+  margin-bottom: 5em;
+}
+
+.cart div.main-cart div.checkout{
+  grid-template-columns: 50% 50%;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  /* left: 0; */
+  margin: 0;
+  background-color: white;
+  border-top: .1em solid #223F9B;
+  padding: .2em 0;
+}
+
+.cart div.main-cart div.checkout button{
+  background: white;
+  color: #223F9B;
+  border: #223F9B solid .1em;
+  border-radius: .5em;
+}
+
+p.quantity {
+  text-align: center;
+}
+
+.shop-content {
+  display: grid;
+  margin-top: 2em;
+  min-height: 10em;
+  /* grid-gap: 15px 15px; */
+  grid-template-columns: auto;
+  grid-template-rows: 100%;
+  grid-template-columns: 25% 45% 20%;
+  justify-content: stretch;
+  grid-template-areas: "img item-info buttons" "img description buttons";
+  border-bottom: #223F9B solid .1em;
+  grid-gap: 1em;
+
+}
+.shop-content:last-child{
+  border-bottom: none;
+
+}
+.shop-content img {
+  width: 100%;
+}
 @media (max-width: 800px)  {
   .navbar{
     /* min-height: .2em; */

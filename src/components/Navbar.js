@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../images/BPlogo(modified).png';
+import logo from '../hero-img/BPlogo(modified).png';
 // import {connect} from 'react-redux'
 
 class Navbar extends Component {
@@ -48,7 +48,6 @@ class Navbar extends Component {
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/shop">Shop</Link>
-          <Link to="/quote">Quote</Link>
           <Link to="/contact-us">Contact Us</Link>
 
 
@@ -58,6 +57,7 @@ class Navbar extends Component {
     )
   }
 }
+// <Link to="/quote">Quote</Link>
 // navbar login and register links
 // {localStorage.getItem("user") ? this.displayLogOutOption() : this.displayLoginOptions()}
 

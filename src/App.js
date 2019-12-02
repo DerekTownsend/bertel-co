@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
-import logo from './images/BPlogo(modified).png';
+import logo from './hero-img/BPlogo(modified).png';
 import HomeContainer from './containers/HomeContainer'
 import AboutContainer from './containers/AboutContainer'
 import ShopContainer from './containers/ShopContainer'
@@ -22,7 +22,6 @@ class App extends Component  {
           <Route exact path='/' component={HomeContainer}/>
           <Route exact path='/about' component={AboutContainer}/>
           <Route exact path='/shop' component={ShopContainer}/>
-          <Route exact path='/quote' component={QuoteContainer}/>
           <Route exact path='/projects' component={ProjectsContainer}/>
           <Route exact path='/contact-us' component={ContactUsContainer}/>
 
@@ -34,6 +33,7 @@ class App extends Component  {
     );
   }
 }
+// <Route exact path='/quote' component={QuoteContainer}/>
 
 export default App;
 // import React, { Component } from 'react';

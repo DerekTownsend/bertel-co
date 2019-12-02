@@ -5,12 +5,12 @@ function importAll(r) {
 }
 
 const images = importAll(require.context('../images', false, /\.(png|JPE?G|svg)$/));
-
+// ["Steel Stud at Wahl",]
 class ProjectsContainer extends Component {
 
 
   renderImages = () => {
-    return images.map(image1 => {
+    return images.map((image1, index) => {
       const imageType = image1.split("/")[3];
       const imageSplit = imageType.split(".");
       if (imageSplit[0] === "BPlogo(modified)" || imageSplit[0] === "BPlogo") {
