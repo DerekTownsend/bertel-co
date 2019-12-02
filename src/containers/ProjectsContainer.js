@@ -5,7 +5,7 @@ function importAll(r) {
 }
 
 const images = importAll(require.context('../images', false, /\.(png|JPE?G|svg)$/));
-// ["Steel Stud at Wahl",]
+const imageNames = ["Steel Stud at Wahl","Shelter", "Wall at Sundtarnd", "Clouds at Sundstrand", "Clouds at Sundstrand", "Clouds at Sundstrand"]
 class ProjectsContainer extends Component {
 
 
@@ -13,12 +13,14 @@ class ProjectsContainer extends Component {
     return images.map((image1, index) => {
       const imageType = image1.split("/")[3];
       const imageSplit = imageType.split(".");
-      if (imageSplit[0] === "BPlogo(modified)" || imageSplit[0] === "BPlogo") {
 
-      } else {
         const imageName = imageSplit[0] + "." + imageSplit[imageSplit.length-1]
-        return <img src={require(`../images/${imageName}`)} />
-      }
+        return (
+          <div>
+          <img key={index} alt={imageNames[index]} src={require(`../images/${imageName}`)} />
+          <p>{imageNames[index]}</p>
+          </div>
+      )
 
     })
   }

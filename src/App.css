@@ -139,6 +139,34 @@ footer .social-icons {
 footer p {
   font-size: 1.2em;
 }
+/*     width: 20em;
+    height: 20em;
+    object-fit: contain; */
+.management, .onSite {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 2em;
+  grid-gap: 2em;
+  text-align: center;
+
+}
+.management div img {
+  width: 13em;
+  height: 13em;
+  object-position: 50% 19%;
+  object-fit: cover;
+}
+
+.onSite{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.onSite div img {
+  width: 13em;
+  height: 13em;
+  object-position: 82% 32%;
+  object-fit: cover;
+}
 
 .project-images {
   display: grid;

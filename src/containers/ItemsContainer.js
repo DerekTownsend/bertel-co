@@ -133,7 +133,7 @@ class ItemsContainer extends Component {
     return shopTiles.map(tile =>{
       return(
         <div className="shop-content" key={tile.id}>
-          <img src={require(`../shop-images/${tile.src}`)} alt={tile.name}/>
+          <img src={require(`../shop-img/${tile.src}`)} alt={tile.name}/>
           <p>{tile.name} <br/><br/>Price: ${tile.price.toFixed(2)} ea. </p>
           <ShopItemForm cartItems={this.props.cartItems} updateItemInCart={this.props.updateItemInCart} item={tile} addItemToCart={this.props.addItemToCart} removeItemInCart={this.props.removeItemInCart}/>
         </div>
@@ -145,7 +145,7 @@ class ItemsContainer extends Component {
     return shopDrywall.map(drywall =>{
       return(
         <div className="shop-content" key={drywall.id}>
-          <img src={require(`../shop-images/${drywall.src}`)} alt={drywall.name}/>
+          <img src={require(`../shop-img/${drywall.src}`)} alt={drywall.name}/>
           <p>{drywall.name} <br/><br/>Price: ${drywall.price.toFixed(2)} ea. </p>
           <ShopItemForm cartItems={this.props.cartItems} updateItemInCart={this.props.updateItemInCart} item={drywall} addItemToCart={this.props.addItemToCart} removeItemInCart={this.props.removeItemInCart}/>
         </div>
