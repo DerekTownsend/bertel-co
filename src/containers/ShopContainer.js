@@ -2,13 +2,17 @@ import React, { Component } from 'react';
 // import {connect} from 'react-redux'
 import ItemsContainer from './ItemsContainer'
 import Cart from '../components/Cart'
+import CheckoutForm from '../components/CheckoutForm'
+
+const intialState = {
+  cartItems: [],
+  checkingOut: false
+}
 
 class ShopContainer extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      cartItems: [],
-    }
+    this.state = intialState;
   }
   addItemToCart = (item) =>{
     console.log(this.state.cartItems);
@@ -39,13 +43,27 @@ class ShopContainer extends Component {
 
   }
 
+  checkOut = () =>{
+    this.setState({
+      checkingOut: !this.state.checkingOut
+    })
+  }
+
+  purchased = () =>{
+    this.setState(intialState)
+  }
+
+
+
+
   render(){
     return (
       <div className="shop">
       <h2>Shop</h2>
         <div className="shop-grid">
-          <ItemsContainer cartItems={this.state.cartItems} addItemToCart={this.addItemToCart} updateItemInCart={this.updateItemInCart} removeItemInCart={this.removeItemInCart}/>
-          <Cart cartItems={this.state.cartItems} />
+          {this.state.checkingOut ? <CheckoutForm checkOut={this.checkOut} checkingOut={this.state.checkingOut} purchased={this.purchased}/> : <ItemsContainer cartItems={this.state.cartItems} addItemToCart={this.addItemToCart} updateItemInCart={this.updateItemInCart} removeItemInCart={this.removeItemInCart}/> }
+
+          <Cart cartItems={this.state.cartItems} checkOut={this.checkOut} checkingOut={this.state.checkingOut}/>
         </div>
       </div>
     )

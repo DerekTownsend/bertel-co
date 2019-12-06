@@ -32,10 +32,11 @@ class Cart extends Component {
       console.log(currentValue);
       return accumulator + (currentValue.quantity * currentValue.item.price)
     },0).toFixed(2)
+    console.log(this.props);
     return (
       <div className="checkout">
         <p>${total}</p>
-        <button>Checkout</button>
+        <button onClick={this.props.checkOut}> {this.props.checkingOut ? "Back" :"Checkout"}</button>
       </div>
     )
   }
